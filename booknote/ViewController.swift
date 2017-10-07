@@ -99,5 +99,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.button.isEnabled = true
+        self.button.backgroundColor = UIColor.blue
+        
+        picker.dismiss(animated: true) {
+            
+        }
+    }
+    
 }
 
