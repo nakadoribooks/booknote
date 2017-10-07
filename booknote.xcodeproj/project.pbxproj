@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A789DF9C0013E85A7A7449D /* Pods_booknoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477FA2256AB405367DF56366 /* Pods_booknoteTests.framework */; };
 		7B8DD0161F88D3C400CD7D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0151F88D3C400CD7D22 /* AppDelegate.swift */; };
 		7B8DD0181F88D3C400CD7D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0171F88D3C400CD7D22 /* ViewController.swift */; };
 		7B8DD01B1F88D3C400CD7D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8DD0191F88D3C400CD7D22 /* Main.storyboard */; };
@@ -14,6 +15,25 @@
 		7B8DD0201F88D3C400CD7D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8DD01E1F88D3C400CD7D22 /* LaunchScreen.storyboard */; };
 		7B8DD02B1F88D3C400CD7D22 /* booknoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD02A1F88D3C400CD7D22 /* booknoteTests.swift */; };
 		7B8DD0361F88D3C400CD7D22 /* booknoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0351F88D3C400CD7D22 /* booknoteUITests.swift */; };
+		7B8DD0531F88D82C00CD7D22 /* AloeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0451F88D82C00CD7D22 /* AloeColor.swift */; };
+		7B8DD0541F88D82C00CD7D22 /* AloeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0461F88D82C00CD7D22 /* AloeDate.swift */; };
+		7B8DD0551F88D82C00CD7D22 /* AloeDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0471F88D82C00CD7D22 /* AloeDevice.swift */; };
+		7B8DD0561F88D82C00CD7D22 /* AloeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0481F88D82C00CD7D22 /* AloeEvent.swift */; };
+		7B8DD0571F88D82C00CD7D22 /* AloeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0491F88D82C00CD7D22 /* AloeFile.swift */; };
+		7B8DD0581F88D82C00CD7D22 /* AloeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD04A1F88D82C00CD7D22 /* AloeLocation.swift */; };
+		7B8DD0591F88D82C00CD7D22 /* AloeThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD04B1F88D82C00CD7D22 /* AloeThread.swift */; };
+		7B8DD05A1F88D82C00CD7D22 /* AloeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD04C1F88D82C00CD7D22 /* AloeUI.swift */; };
+		7B8DD05B1F88D82C00CD7D22 /* AloeChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD04E1F88D82C00CD7D22 /* AloeChain.swift */; };
+		7B8DD05C1F88D82C00CD7D22 /* AloeEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD04F1F88D82C00CD7D22 /* AloeEase.swift */; };
+		7B8DD05D1F88D82C00CD7D22 /* AloeEaseBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0501F88D82C00CD7D22 /* AloeEaseBezier.swift */; };
+		7B8DD05E1F88D82C00CD7D22 /* AloeTween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0511F88D82C00CD7D22 /* AloeTween.swift */; };
+		7B8DD05F1F88D82C00CD7D22 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0521F88D82C00CD7D22 /* ReplaceMe.swift */; };
+		7B8DD0611F88D9DA00CD7D22 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD0601F88D9DA00CD7D22 /* Config.swift */; };
+		7BE727351F88E90F00BAEEE8 /* CloudVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE727341F88E90F00BAEEE8 /* CloudVision.swift */; };
+		7BE727371F88E9C900BAEEE8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE727361F88E9C900BAEEE8 /* Util.swift */; };
+		7BE7273B1F88F25E00BAEEE8 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7273A1F88F25E00BAEEE8 /* test@2x.png */; };
+		AF789128B6DBF8E865006F97 /* Pods_booknoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D17EB7154AC0C0AF32FCCB /* Pods_booknoteUITests.framework */; };
+		B7C226B4DD0CD372564A9964 /* Pods_booknote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E60189383135A21F6276A4F /* Pods_booknote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DD4CB51C5B79D43E9E8B85A /* Pods-booknoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-booknoteTests/Pods-booknoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E60189383135A21F6276A4F /* Pods_booknote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		258FEE204534A6AC42D6D933 /* Pods-booknoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booknoteTests/Pods-booknoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		477FA2256AB405367DF56366 /* Pods_booknoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A37236F95504B6FC279A9B2 /* Pods-booknoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-booknoteUITests/Pods-booknoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51D17EB7154AC0C0AF32FCCB /* Pods_booknoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E67254A7BED3D69CC96BC23 /* Pods-booknoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booknoteUITests/Pods-booknoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8DD0121F88D3C400CD7D22 /* booknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8DD0151F88D3C400CD7D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8DD0171F88D3C400CD7D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +74,25 @@
 		7B8DD0311F88D3C400CD7D22 /* booknoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = booknoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8DD0351F88D3C400CD7D22 /* booknoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booknoteUITests.swift; sourceTree = "<group>"; };
 		7B8DD0371F88D3C400CD7D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8DD0451F88D82C00CD7D22 /* AloeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeColor.swift; sourceTree = "<group>"; };
+		7B8DD0461F88D82C00CD7D22 /* AloeDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeDate.swift; sourceTree = "<group>"; };
+		7B8DD0471F88D82C00CD7D22 /* AloeDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeDevice.swift; sourceTree = "<group>"; };
+		7B8DD0481F88D82C00CD7D22 /* AloeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEvent.swift; sourceTree = "<group>"; };
+		7B8DD0491F88D82C00CD7D22 /* AloeFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeFile.swift; sourceTree = "<group>"; };
+		7B8DD04A1F88D82C00CD7D22 /* AloeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeLocation.swift; sourceTree = "<group>"; };
+		7B8DD04B1F88D82C00CD7D22 /* AloeThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeThread.swift; sourceTree = "<group>"; };
+		7B8DD04C1F88D82C00CD7D22 /* AloeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeUI.swift; sourceTree = "<group>"; };
+		7B8DD04E1F88D82C00CD7D22 /* AloeChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeChain.swift; sourceTree = "<group>"; };
+		7B8DD04F1F88D82C00CD7D22 /* AloeEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEase.swift; sourceTree = "<group>"; };
+		7B8DD0501F88D82C00CD7D22 /* AloeEaseBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEaseBezier.swift; sourceTree = "<group>"; };
+		7B8DD0511F88D82C00CD7D22 /* AloeTween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeTween.swift; sourceTree = "<group>"; };
+		7B8DD0521F88D82C00CD7D22 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		7B8DD0601F88D9DA00CD7D22 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7BE727341F88E90F00BAEEE8 /* CloudVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVision.swift; sourceTree = "<group>"; };
+		7BE727361F88E9C900BAEEE8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7BE7273A1F88F25E00BAEEE8 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		899E752554ABC6005830F29A /* Pods-booknote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote.release.xcconfig"; path = "Pods/Target Support Files/Pods-booknote/Pods-booknote.release.xcconfig"; sourceTree = "<group>"; };
+		C250B6212086A8585B506F29 /* Pods-booknote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booknote/Pods-booknote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C226B4DD0CD372564A9964 /* Pods_booknote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A789DF9C0013E85A7A7449D /* Pods_booknoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +116,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF789128B6DBF8E865006F97 /* Pods_booknoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BBE18E47C7811E73395D171 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E60189383135A21F6276A4F /* Pods_booknote.framework */,
+				477FA2256AB405367DF56366 /* Pods_booknoteTests.framework */,
+				51D17EB7154AC0C0AF32FCCB /* Pods_booknoteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B8DD0091F88D3C400CD7D22 = {
 			isa = PBXGroup;
 			children = (
+				7B8DD0431F88D82C00CD7D22 /* libs */,
 				7B8DD0141F88D3C400CD7D22 /* booknote */,
 				7B8DD0291F88D3C400CD7D22 /* booknoteTests */,
 				7B8DD0341F88D3C400CD7D22 /* booknoteUITests */,
 				7B8DD0131F88D3C400CD7D22 /* Products */,
+				82A45B00B4C53CDD41BE6A2B /* Pods */,
+				6BBE18E47C7811E73395D171 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +159,15 @@
 		7B8DD0141F88D3C400CD7D22 /* booknote */ = {
 			isa = PBXGroup;
 			children = (
+				7BE727331F88E90500BAEEE8 /* util */,
+				7B8DD0621F88DB2900CD7D22 /* images */,
 				7B8DD0151F88D3C400CD7D22 /* AppDelegate.swift */,
 				7B8DD0171F88D3C400CD7D22 /* ViewController.swift */,
 				7B8DD0191F88D3C400CD7D22 /* Main.storyboard */,
 				7B8DD01C1F88D3C400CD7D22 /* Assets.xcassets */,
 				7B8DD01E1F88D3C400CD7D22 /* LaunchScreen.storyboard */,
 				7B8DD0211F88D3C400CD7D22 /* Info.plist */,
+				7B8DD0601F88D9DA00CD7D22 /* Config.swift */,
 			);
 			path = booknote;
 			sourceTree = "<group>";
@@ -125,6 +190,72 @@
 			path = booknoteUITests;
 			sourceTree = "<group>";
 		};
+		7B8DD0431F88D82C00CD7D22 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				7B8DD0441F88D82C00CD7D22 /* aloe */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		7B8DD0441F88D82C00CD7D22 /* aloe */ = {
+			isa = PBXGroup;
+			children = (
+				7B8DD0451F88D82C00CD7D22 /* AloeColor.swift */,
+				7B8DD0461F88D82C00CD7D22 /* AloeDate.swift */,
+				7B8DD0471F88D82C00CD7D22 /* AloeDevice.swift */,
+				7B8DD0481F88D82C00CD7D22 /* AloeEvent.swift */,
+				7B8DD0491F88D82C00CD7D22 /* AloeFile.swift */,
+				7B8DD04A1F88D82C00CD7D22 /* AloeLocation.swift */,
+				7B8DD04B1F88D82C00CD7D22 /* AloeThread.swift */,
+				7B8DD04C1F88D82C00CD7D22 /* AloeUI.swift */,
+				7B8DD04D1F88D82C00CD7D22 /* animation */,
+				7B8DD0521F88D82C00CD7D22 /* ReplaceMe.swift */,
+			);
+			path = aloe;
+			sourceTree = "<group>";
+		};
+		7B8DD04D1F88D82C00CD7D22 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				7B8DD04E1F88D82C00CD7D22 /* AloeChain.swift */,
+				7B8DD04F1F88D82C00CD7D22 /* AloeEase.swift */,
+				7B8DD0501F88D82C00CD7D22 /* AloeEaseBezier.swift */,
+				7B8DD0511F88D82C00CD7D22 /* AloeTween.swift */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		7B8DD0621F88DB2900CD7D22 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7273A1F88F25E00BAEEE8 /* test@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		7BE727331F88E90500BAEEE8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7BE727341F88E90F00BAEEE8 /* CloudVision.swift */,
+				7BE727361F88E9C900BAEEE8 /* Util.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		82A45B00B4C53CDD41BE6A2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C250B6212086A8585B506F29 /* Pods-booknote.debug.xcconfig */,
+				899E752554ABC6005830F29A /* Pods-booknote.release.xcconfig */,
+				258FEE204534A6AC42D6D933 /* Pods-booknoteTests.debug.xcconfig */,
+				0DD4CB51C5B79D43E9E8B85A /* Pods-booknoteTests.release.xcconfig */,
+				6E67254A7BED3D69CC96BC23 /* Pods-booknoteUITests.debug.xcconfig */,
+				4A37236F95504B6FC279A9B2 /* Pods-booknoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8DD03A1F88D3C400CD7D22 /* Build configuration list for PBXNativeTarget "booknote" */;
 			buildPhases = (
+				A897C32BF33286B6549E78DA /* [CP] Check Pods Manifest.lock */,
 				7B8DD00E1F88D3C400CD7D22 /* Sources */,
 				7B8DD00F1F88D3C400CD7D22 /* Frameworks */,
 				7B8DD0101F88D3C400CD7D22 /* Resources */,
+				70A241341C0AC6EA8367F0C0 /* [CP] Embed Pods Frameworks */,
+				47BCECEA0B8EDC71AFC1FEF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8DD03D1F88D3C400CD7D22 /* Build configuration list for PBXNativeTarget "booknoteTests" */;
 			buildPhases = (
+				5D459E6275D8166427D39189 /* [CP] Check Pods Manifest.lock */,
 				7B8DD0221F88D3C400CD7D22 /* Sources */,
 				7B8DD0231F88D3C400CD7D22 /* Frameworks */,
 				7B8DD0241F88D3C400CD7D22 /* Resources */,
+				0B8DE3F66B337C36A5195246 /* [CP] Embed Pods Frameworks */,
+				FF8317F8BBEEBCC3396F12A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8DD0401F88D3C400CD7D22 /* Build configuration list for PBXNativeTarget "booknoteUITests" */;
 			buildPhases = (
+				942208D21696D17C15A87002 /* [CP] Check Pods Manifest.lock */,
 				7B8DD02D1F88D3C400CD7D22 /* Sources */,
 				7B8DD02E1F88D3C400CD7D22 /* Frameworks */,
 				7B8DD02F1F88D3C400CD7D22 /* Resources */,
+				648778EF7114FCD59B4F4C50 /* [CP] Embed Pods Frameworks */,
+				7DA39FA9578503FB417F6C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8DD0201F88D3C400CD7D22 /* LaunchScreen.storyboard in Resources */,
+				7BE7273B1F88F25E00BAEEE8 /* test@2x.png in Resources */,
 				7B8DD01D1F88D3C400CD7D22 /* Assets.xcassets in Resources */,
 				7B8DD01B1F88D3C400CD7D22 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +395,167 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B8DE3F66B337C36A5195246 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknoteTests/Pods-booknoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47BCECEA0B8EDC71AFC1FEF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknote/Pods-booknote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D459E6275D8166427D39189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		648778EF7114FCD59B4F4C50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknoteUITests/Pods-booknoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A241341C0AC6EA8367F0C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknote/Pods-booknote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA39FA9578503FB417F6C10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknoteUITests/Pods-booknoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		942208D21696D17C15A87002 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A897C32BF33286B6549E78DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF8317F8BBEEBCC3396F12A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-booknoteTests/Pods-booknoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B8DD00E1F88D3C400CD7D22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8DD05C1F88D82C00CD7D22 /* AloeEase.swift in Sources */,
+				7BE727371F88E9C900BAEEE8 /* Util.swift in Sources */,
+				7B8DD0541F88D82C00CD7D22 /* AloeDate.swift in Sources */,
+				7BE727351F88E90F00BAEEE8 /* CloudVision.swift in Sources */,
+				7B8DD05E1F88D82C00CD7D22 /* AloeTween.swift in Sources */,
+				7B8DD0531F88D82C00CD7D22 /* AloeColor.swift in Sources */,
+				7B8DD05A1F88D82C00CD7D22 /* AloeUI.swift in Sources */,
+				7B8DD0571F88D82C00CD7D22 /* AloeFile.swift in Sources */,
+				7B8DD0551F88D82C00CD7D22 /* AloeDevice.swift in Sources */,
+				7B8DD0591F88D82C00CD7D22 /* AloeThread.swift in Sources */,
+				7B8DD05D1F88D82C00CD7D22 /* AloeEaseBezier.swift in Sources */,
+				7B8DD05F1F88D82C00CD7D22 /* ReplaceMe.swift in Sources */,
 				7B8DD0181F88D3C400CD7D22 /* ViewController.swift in Sources */,
+				7B8DD05B1F88D82C00CD7D22 /* AloeChain.swift in Sources */,
 				7B8DD0161F88D3C400CD7D22 /* AppDelegate.swift in Sources */,
+				7B8DD0611F88D9DA00CD7D22 /* Config.swift in Sources */,
+				7B8DD0561F88D82C00CD7D22 /* AloeEvent.swift in Sources */,
+				7B8DD0581F88D82C00CD7D22 /* AloeLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +719,13 @@
 		};
 		7B8DD03B1F88D3C400CD7D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C250B6212086A8585B506F29 /* Pods-booknote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHQWK52K6D;
 				INFOPLIST_FILE = booknote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.booknote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,11 +736,13 @@
 		};
 		7B8DD03C1F88D3C400CD7D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899E752554ABC6005830F29A /* Pods-booknote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHQWK52K6D;
 				INFOPLIST_FILE = booknote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.booknote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +753,7 @@
 		};
 		7B8DD03E1F88D3C400CD7D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258FEE204534A6AC42D6D933 /* Pods-booknoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +771,7 @@
 		};
 		7B8DD03F1F88D3C400CD7D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD4CB51C5B79D43E9E8B85A /* Pods-booknoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +789,7 @@
 		};
 		7B8DD0411F88D3C400CD7D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E67254A7BED3D69CC96BC23 /* Pods-booknoteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +806,7 @@
 		};
 		7B8DD0421F88D3C400CD7D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A37236F95504B6FC279A9B2 /* Pods-booknoteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

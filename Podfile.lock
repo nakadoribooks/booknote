@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.5.1)
+  - PromiseKit (4.4.0):
+    - PromiseKit/Foundation (= 4.4.0)
+    - PromiseKit/QuartzCore (= 4.4.0)
+    - PromiseKit/UIKit (= 4.4.0)
+  - PromiseKit/Alamofire (4.4.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (4.4.0)
+  - PromiseKit/Foundation (4.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.4.0):
+    - PromiseKit/CorePromise
+  - RxSwift (4.0.0-beta.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - PromiseKit (~> 4.4)
+  - PromiseKit/Alamofire
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, tag `4.0.0-beta.1`)
+  - SwiftyJSON (~> 3.1)
+
+EXTERNAL SOURCES:
+  RxSwift:
+    :git: https://github.com/ReactiveX/RxSwift.git
+    :tag: 4.0.0-beta.1
+
+CHECKOUT OPTIONS:
+  RxSwift:
+    :git: https://github.com/ReactiveX/RxSwift.git
+    :tag: 4.0.0-beta.1
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e
+  RxSwift: 9488787dfac649ffc1c4fddf3a3b4d6823d0b392
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 92586f19af862a49dde2ebe57d607defb8eeb2bf
+
+COCOAPODS: 1.2.1
