@@ -9,8 +9,6 @@
 import UIKit
 
 typealias ImagePickerDidSelected = (_ image:UIImage?)->()
-typealias ImagePickerDidCancel = ()->()
-typealias ImagePickerCallback = (selected:ImagePickerDidSelected, canceled:ImagePickerDidCancel)
 
 class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -45,12 +43,16 @@ class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationContro
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         callback?(nil)
         picker.dismiss(animated: true, completion: nil)
+        
+        callback = nil
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         callback?(image)
         picker.dismiss(animated: true, completion: nil)
+        
+        callback = nil
     }
     
     private func createCameraOverlay()->UIView{

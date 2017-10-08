@@ -13,7 +13,7 @@ class TopViewController: BaseViewController {
     private let label = UILabel()
     private let sv = UIScrollView()
     private let button = UIButton(frame:CGRect(x: 20, y: AloeDevice.windowHeight() - 50 - 20, width: AloeDevice.windowWidth() - 40, height: 50))
-    
+        
     deinit {
         print("TopViewController.deinit")
     }
@@ -41,34 +41,52 @@ class TopViewController: BaseViewController {
         
         self.button.isEnabled = false
         self.button.backgroundColor = UIColor.gray
-
-        ImagePicker.sharedInstance.show(callback: { (image) in
+        
+        BarcodeReader.sharedInstance.show { (ean13String) in
             
-            guard let image = image else {
-                self.button.isEnabled = true
-                self.button.backgroundColor = UIColor.blue
-                print("no image")
-                return ;
+            self.button.isEnabled = true
+            self.button.backgroundColor = UIColor.blue
+            
+            guard let ean13String = ean13String else{
+                return
             }
             
-            self.label.text = ""
-            self.sv.contentSize.height = 0
-            
-            CloudVision.sharedInstance.getText(image: image) { (string) in
-                print("string", string)
-                
-                let text = string.replacingOccurrences(of: "\n", with: "")
-                self.label.frame = CGRect(x: 10, y: 30, width: AloeDevice.windowWidth() - 20, height: 10000)
-                self.label.numberOfLines = 0
-                self.label.attributedText = AloeUI.attributedText(text, lineHeight: 1.1)
-                self.label.sizeToFit()
-                self.sv.contentSize.height = self.label.frame.size.height + self.label.frame.origin.y + 10 + 70
-                
-                self.button.isEnabled = true
-                self.button.backgroundColor = UIColor.blue
+            let amazon = Amazon.sharedInstance
+            amazon.findBook(isbn: ean13String) { (book) in
+                print("----------- found book ------------")
+                print("author", book.author)
+                print("title", book.title)
             }
-            
-        }, sourceType: .photoLibrary)
+        }
+        
+//        ImagePicker.sharedInstance.show(callback: { (image) in
+//
+//            guard let image = image else {
+//                self.button.isEnabled = true
+//                self.button.backgroundColor = UIColor.blue
+//                print("no image")
+//                return ;
+//            }
+//
+//            self.label.text = ""
+//            self.sv.contentSize.height = 0
+//
+//            CloudVision.sharedInstance.getText(image: image) { (string) in
+//                print("string", string)
+//
+//                let text = string.replacingOccurrences(of: "\n", with: "")
+//                self.label.frame = CGRect(x: 10, y: 30, width: AloeDevice.windowWidth() - 20, height: 10000)
+//                self.label.numberOfLines = 0
+//                self.label.attributedText = AloeUI.attributedText(text, lineHeight: 1.1)
+//                self.label.sizeToFit()
+//                self.sv.contentSize.height = self.label.frame.size.height + self.label.frame.origin.y + 10 + 70
+//
+//                self.button.isEnabled = true
+//                self.button.backgroundColor = UIColor.blue
+//            }
+//
+//        }, sourceType: .photoLibrary)
+        
     }
     
     override func didReceiveMemoryWarning() {

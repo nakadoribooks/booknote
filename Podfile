@@ -11,6 +11,7 @@ target 'booknote' do
   pod "PromiseKit", "~> 4.4"
   pod 'PromiseKit/Alamofire'
   pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :tag => '4.0.0-beta.1'
+  pod 'SWXMLHash', '~> 4.0.0'
 
   target 'booknoteTests' do
     inherit! :search_paths

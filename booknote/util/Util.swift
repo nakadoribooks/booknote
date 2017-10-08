@@ -31,4 +31,5 @@ class Util: NSObject {
         UIGraphicsEndImageContext()
         return resizedImage!
     }
+
 }
