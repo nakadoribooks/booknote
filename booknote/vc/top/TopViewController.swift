@@ -12,7 +12,7 @@ class TopViewController: BaseViewController {
 
     private let label = UILabel()
     private let sv = UIScrollView()
-    private let button = UIButton(frame:CGRect(x: 20, y: AloeDevice.windowHeight() - 50 - 20, width: AloeDevice.windowWidth() - 40, height: 50))
+    private let addButton = UIButton()
         
     deinit {
         print("TopViewController.deinit")
@@ -28,35 +28,30 @@ class TopViewController: BaseViewController {
         
         label.font = UIFont.systemFont(ofSize: 22.0)
         
-        button.setTitle("写す", for: .normal)
-        button.setTitle("解析中", for: .disabled)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = UIColor.blue
-        button.addTarget(self, action: #selector(TopViewController.tapButton), for: .touchUpInside)
+        addButton.frame = CGRect(x: 0, y: windowHeight()-54, width: windowWidth(), height: 54)
+        addButton.setTitle("追加", for: .normal)
+        addButton.setTitleColor(UIColor.white, for: .normal)
+        addButton.backgroundColor = UIColor.blue
+        addButton.addTarget(self, action: #selector(TopViewController.tapButton), for: .touchUpInside)
         
-        view.addSubview(button)
+        view.addSubview(addButton)
     }
     
     @objc private dynamic func tapButton(){
         
-        self.button.isEnabled = false
-        self.button.backgroundColor = UIColor.gray
+        self.addButton.isEnabled = false
+        self.addButton.backgroundColor = UIColor.gray
         
-        BarcodeReader.sharedInstance.show { (ean13String) in
+        BarcodeReader.sharedInstance.show { (book) in
+            self.addButton.isEnabled = true
+            self.addButton.backgroundColor = UIColor.blue
             
-            self.button.isEnabled = true
-            self.button.backgroundColor = UIColor.blue
-            
-            guard let ean13String = ean13String else{
+            guard let book = book else{
                 return
             }
             
-            let amazon = Amazon.sharedInstance
-            amazon.findBook(isbn: ean13String) { (book) in
-                print("----------- found book ------------")
-                print("author", book.author)
-                print("title", book.title)
-            }
+            print("selected Book")
+            print(book.title)
         }
         
 //        ImagePicker.sharedInstance.show(callback: { (image) in

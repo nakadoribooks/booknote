@@ -11,7 +11,7 @@ import AVFoundation
 import Alamofire
 import SWXMLHash
 
-typealias BarcodeReaderDidSelected = (_ ean13String:String?)->()
+typealias BarcodeReaderDidSelected = (_ book:Book?)->()
 
 enum CryptoAlgorithm {
     case MD5, SHA1, SHA224, SHA256, SHA384, SHA512
@@ -69,6 +69,7 @@ class BarcodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
 
     static let sharedInstance = BarcodeReader()
     private let viewController = UIViewController()
+    private let cancelButton = UIButton()
     private var callback:BarcodeReaderDidSelected?
     private let session = AVCaptureSession()
     
@@ -83,20 +84,58 @@ class BarcodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         session.addOutput(output)
         output.metadataObjectTypes = [AVMetadataObject.ObjectType.ean13,AVMetadataObject.ObjectType.ean8]
+        
+        cancelButton.frame = CGRect(x: 0, y: windowHeight() - 54, width: windowWidth(), height: 54)
+        cancelButton.backgroundColor = UIColor.gray
+        cancelButton.setTitle("キャンセル", for: .normal)
+        cancelButton.addTarget(self, action: #selector(BarcodeReader.tapCancel), for: .touchUpInside)
     }
     
-    private func foundEan13String(ean13String:String){
-        callback?(ean13String)
+    @objc private dynamic func tapCancel(){
+        close()
+    }
+    
+    private func close(){
+        callback?(nil)
         callback = nil
         session.stopRunning()
         
         viewController.dismiss(animated: true) {
+            self.cancelButton.removeFromSuperview()
             if let sublayers = self.viewController.view.layer.sublayers{
                 for sublayer in sublayers{
                     sublayer.removeFromSuperlayer()
                 }
             }
         }
+    }
+    
+    private func foundEan13String(ean13String:String){
+        session.stopRunning()
+        
+        BookPopup.show(isbn: ean13String, parentView: viewController.view) { (book) in
+            guard let book = book else{
+                self.session.startRunning()
+                return
+            }
+            
+            self.callback?(book)
+            self.callback = nil
+            
+            self.viewController.dismiss(animated: true) {
+                self.cancelButton.removeFromSuperview()
+                if let sublayers = self.viewController.view.layer.sublayers{
+                    for sublayer in sublayers{
+                        sublayer.removeFromSuperlayer()
+                    }
+                }
+            }
+
+        }
+    }
+    
+    private func showPop(){
+        
     }
     
     private var timestamp: DateFormatter {
@@ -116,6 +155,7 @@ class BarcodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
         layer.frame = viewController.view.bounds
         layer.videoGravity = .resizeAspectFill
         viewController.view.layer.addSublayer(layer)
+        viewController.view.addSubview(cancelButton)
         
         session.startRunning()
         
@@ -127,12 +167,10 @@ class BarcodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     // MARK AVCaptureMetadataOutputObjectsDelegate
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        print(metadataObjects)
         for meta in metadataObjects{
             if meta.type == .ean8{
                 
             }else if meta.type == .ean13{
-                print("ean13")
                 if let readableObject = meta as? AVMetadataMachineReadableCodeObject
                 , let ean13String = readableObject.stringValue{
                     if ean13String.hasPrefix("9"){

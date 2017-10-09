@@ -54,6 +54,8 @@ class Amazon: NSObject {
     
     func findBook(isbn:String, callback:@escaping (_ book:Book)->()){
         let url = amazonUrl(isbn: isbn)
+        print(isbn)
+        print(url)
         
         Alamofire.request(url).response{ response in
             print("loaded amazon")
@@ -61,6 +63,8 @@ class Amazon: NSObject {
             let lookupResponse = xml["ItemLookupResponse"]
             let items = lookupResponse["Items"]
             let item = items["Item"]
+            
+            print(xml)
             
 //            print("---- xml -----")
 //            print(xml)
