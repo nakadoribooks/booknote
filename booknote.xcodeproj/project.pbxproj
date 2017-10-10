@@ -10,8 +10,12 @@
 		5A789DF9C0013E85A7A7449D /* Pods_booknoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477FA2256AB405367DF56366 /* Pods_booknoteTests.framework */; };
 		7B29CB961F8B229200DBC19D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B29CB951F8B229100DBC19D /* UI.swift */; };
 		7B29CB9E1F8B2B5900DBC19D /* BarcodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B29CB9B1F8B2B5900DBC19D /* BarcodeReader.swift */; };
-		7B29CB9F1F8B2B5900DBC19D /* Amazon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B29CB9D1F8B2B5900DBC19D /* Amazon.swift */; };
-		7B29CBA11F8B2B6C00DBC19D /* BookPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B29CBA01F8B2B6C00DBC19D /* BookPopup.swift */; };
+		7B39BDDF1F8C6ECE0011CA84 /* AmazonFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDDD1F8C6ECE0011CA84 /* AmazonFinder.swift */; };
+		7B39BDE01F8C6ECE0011CA84 /* BookPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDDE1F8C6ECE0011CA84 /* BookPopup.swift */; };
+		7B39BDE21F8C6FB70011CA84 /* BookFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDE11F8C6FB70011CA84 /* BookFinder.swift */; };
+		7B39BDE41F8C6FEE0011CA84 /* IBookFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDE31F8C6FEE0011CA84 /* IBookFinder.swift */; };
+		7B39BDE61F8C73120011CA84 /* RakutenFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDE51F8C73120011CA84 /* RakutenFinder.swift */; };
+		7B39BDE81F8C79A80011CA84 /* GoogleFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39BDE71F8C79A80011CA84 /* GoogleFinder.swift */; };
 		7B3D2F681F8A1547007795ED /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D2F671F8A1547007795ED /* Book.swift */; };
 		7B5D86CF1F89CB6300511908 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D86CE1F89CB6300511908 /* ImagePicker.swift */; };
 		7B5D86D11F89CDB200511908 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D86D01F89CDB200511908 /* Global.swift */; };
@@ -71,8 +75,12 @@
 		6E67254A7BED3D69CC96BC23 /* Pods-booknoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booknoteUITests/Pods-booknoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B29CB951F8B229100DBC19D /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		7B29CB9B1F8B2B5900DBC19D /* BarcodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReader.swift; sourceTree = "<group>"; };
-		7B29CB9D1F8B2B5900DBC19D /* Amazon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amazon.swift; sourceTree = "<group>"; };
-		7B29CBA01F8B2B6C00DBC19D /* BookPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPopup.swift; sourceTree = "<group>"; };
+		7B39BDDD1F8C6ECE0011CA84 /* AmazonFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonFinder.swift; sourceTree = "<group>"; };
+		7B39BDDE1F8C6ECE0011CA84 /* BookPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPopup.swift; sourceTree = "<group>"; };
+		7B39BDE11F8C6FB70011CA84 /* BookFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFinder.swift; sourceTree = "<group>"; };
+		7B39BDE31F8C6FEE0011CA84 /* IBookFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBookFinder.swift; sourceTree = "<group>"; };
+		7B39BDE51F8C73120011CA84 /* RakutenFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenFinder.swift; sourceTree = "<group>"; };
+		7B39BDE71F8C79A80011CA84 /* GoogleFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleFinder.swift; sourceTree = "<group>"; };
 		7B3D2F651F89F54B007795ED /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		7B3D2F671F8A1547007795ED /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		7B5D86CE1F89CB6300511908 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -158,13 +166,25 @@
 			path = barcodeReader;
 			sourceTree = "<group>";
 		};
-		7B29CB9C1F8B2B5900DBC19D /* amazon */ = {
+		7B39BDDB1F8C6ECE0011CA84 /* bookFinder */ = {
 			isa = PBXGroup;
 			children = (
-				7B29CB9D1F8B2B5900DBC19D /* Amazon.swift */,
-				7B29CBA01F8B2B6C00DBC19D /* BookPopup.swift */,
+				7B39BDDC1F8C6ECE0011CA84 /* finder */,
+				7B39BDDE1F8C6ECE0011CA84 /* BookPopup.swift */,
+				7B39BDE11F8C6FB70011CA84 /* BookFinder.swift */,
+				7B39BDE31F8C6FEE0011CA84 /* IBookFinder.swift */,
 			);
-			path = amazon;
+			path = bookFinder;
+			sourceTree = "<group>";
+		};
+		7B39BDDC1F8C6ECE0011CA84 /* finder */ = {
+			isa = PBXGroup;
+			children = (
+				7B39BDDD1F8C6ECE0011CA84 /* AmazonFinder.swift */,
+				7B39BDE51F8C73120011CA84 /* RakutenFinder.swift */,
+				7B39BDE71F8C79A80011CA84 /* GoogleFinder.swift */,
+			);
+			path = finder;
 			sourceTree = "<group>";
 		};
 		7B3D2F661F8A1535007795ED /* entities */ = {
@@ -298,7 +318,7 @@
 		7BE727331F88E90500BAEEE8 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				7B29CB9C1F8B2B5900DBC19D /* amazon */,
+				7B39BDDB1F8C6ECE0011CA84 /* bookFinder */,
 				7B29CB9A1F8B2B5900DBC19D /* barcodeReader */,
 				7BE727341F88E90F00BAEEE8 /* CloudVision.swift */,
 				7BE727361F88E9C900BAEEE8 /* Util.swift */,
@@ -606,26 +626,30 @@
 				7B8DD05C1F88D82C00CD7D22 /* AloeEase.swift in Sources */,
 				7B5D86D91F89CE3400511908 /* TopViewController.swift in Sources */,
 				7BE727371F88E9C900BAEEE8 /* Util.swift in Sources */,
-				7B29CB9F1F8B2B5900DBC19D /* Amazon.swift in Sources */,
+				7B39BDDF1F8C6ECE0011CA84 /* AmazonFinder.swift in Sources */,
 				7B29CB9E1F8B2B5900DBC19D /* BarcodeReader.swift in Sources */,
 				7B8DD0541F88D82C00CD7D22 /* AloeDate.swift in Sources */,
 				7BE727351F88E90F00BAEEE8 /* CloudVision.swift in Sources */,
 				7B8DD05E1F88D82C00CD7D22 /* AloeTween.swift in Sources */,
-				7B29CBA11F8B2B6C00DBC19D /* BookPopup.swift in Sources */,
+				7B39BDE01F8C6ECE0011CA84 /* BookPopup.swift in Sources */,
 				7B5D86D51F89CE0F00511908 /* BaseViewController.swift in Sources */,
 				7B29CB961F8B229200DBC19D /* UI.swift in Sources */,
+				7B39BDE41F8C6FEE0011CA84 /* IBookFinder.swift in Sources */,
 				7B8DD0531F88D82C00CD7D22 /* AloeColor.swift in Sources */,
 				7B8DD05A1F88D82C00CD7D22 /* AloeUI.swift in Sources */,
 				7B5D86CF1F89CB6300511908 /* ImagePicker.swift in Sources */,
 				7B5D86D11F89CDB200511908 /* Global.swift in Sources */,
 				7B8DD0571F88D82C00CD7D22 /* AloeFile.swift in Sources */,
 				7B8DD0551F88D82C00CD7D22 /* AloeDevice.swift in Sources */,
+				7B39BDE61F8C73120011CA84 /* RakutenFinder.swift in Sources */,
 				7B8DD0591F88D82C00CD7D22 /* AloeThread.swift in Sources */,
+				7B39BDE21F8C6FB70011CA84 /* BookFinder.swift in Sources */,
 				7B8DD05D1F88D82C00CD7D22 /* AloeEaseBezier.swift in Sources */,
 				7B5D86D71F89CE2100511908 /* RootViewController.swift in Sources */,
 				7B8DD05F1F88D82C00CD7D22 /* ReplaceMe.swift in Sources */,
 				7B3D2F681F8A1547007795ED /* Book.swift in Sources */,
 				7B8DD05B1F88D82C00CD7D22 /* AloeChain.swift in Sources */,
+				7B39BDE81F8C79A80011CA84 /* GoogleFinder.swift in Sources */,
 				7B8DD0161F88D3C400CD7D22 /* AppDelegate.swift in Sources */,
 				7B8DD0611F88D9DA00CD7D22 /* Config.swift in Sources */,
 				7B8DD0561F88D82C00CD7D22 /* AloeEvent.swift in Sources */,

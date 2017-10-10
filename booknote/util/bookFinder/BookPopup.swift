@@ -133,7 +133,7 @@ class BookPopup: NSObject {
             self.contentView.transform = CGAffineTransform(scaleX: scale, y: scale)
         }.execute()
         
-        Amazon.sharedInstance.findBook(isbn: isbn) { (book) in
+        BookFinder.sharedInstance.findBook(isbn: isbn).then { (book) -> Void in
             self.loadedBook(book: book)
         }
     }
@@ -159,13 +159,13 @@ class BookPopup: NSObject {
         commitButton.isEnabled = true
         commitButton.backgroundColor = UIColor.blue
         
-        AloeChain().add(0.2, ease: .Ease, progress: { (val) in
+        AloeChain().add(0.1, ease: .Ease, progress: { (val) in
             let reverse = 1.0 - val
             self.loadingView.alpha = reverse
-            self.loadingView.transform = CGAffineTransform(translationX: 0, y: -20*val)
-        }).add(0.2, ease: .Ease, progress: { (val) in
+            self.loadingView.transform = CGAffineTransform(translationX: 0, y: -10*val)
+        }).add(0.1, ease: .Ease, progress: { (val) in
             let reverse = 1.0 - val
-            self.bookView.transform = CGAffineTransform(translationX: 0, y: 20 * reverse)
+            self.bookView.transform = CGAffineTransform(translationX: 0, y: 10 * reverse)
             self.bookView.alpha = val
         }).execute()
         

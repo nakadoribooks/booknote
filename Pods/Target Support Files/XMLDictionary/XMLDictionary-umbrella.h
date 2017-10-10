@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "XMLDictionary.h"
 
-FOUNDATION_EXPORT double SWXMLHashVersionNumber;
-FOUNDATION_EXPORT const unsigned char SWXMLHashVersionString[];
+FOUNDATION_EXPORT double XMLDictionaryVersionNumber;
+FOUNDATION_EXPORT const unsigned char XMLDictionaryVersionString[];
 

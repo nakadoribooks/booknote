@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 import Alamofire
-import SWXMLHash
 
 typealias BarcodeReaderDidSelected = (_ book:Book?)->()
 
